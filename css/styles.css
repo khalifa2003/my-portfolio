@@ -59,7 +59,6 @@ main p {
   transition: 0.3s;
   width: 100%;
 }
-
 .hamburger {
   display: none;
   cursor: pointer;
@@ -224,7 +223,6 @@ main p {
 .sidebar ul.social-icons li a:hover {
   color: #ffffff;
 }
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
@@ -259,7 +257,6 @@ main p {
   gap: 20px;
   flex-wrap: wrap;
 }
-
 .skill-container h3 {
   color: #f5b225;
   font-size: 1.5em;
@@ -330,6 +327,24 @@ main p {
 }
 .skill-card.python i {
   color: #3776ab;
+}
+.skill-card.express i {
+  color: #68a063;
+}
+.skill-card.jwt i {
+  color: #d63aff;
+}
+.skill-card.mongoose i {
+  color: #880000;
+}
+.skill-card.nodemailer i {
+  color: #007acc;
+}
+.skill-card.bcrypt i {
+  color: #d63aff;
+}
+.skill-card.multer i {
+  color: #008800;
 }
 /* End Skills */
 
