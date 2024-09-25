@@ -18,6 +18,9 @@ p {
   font-size: 1rem;
   line-height: 1.6;
 }
+a {
+  text-decoration: none;
+}
 .container {
   display: flex;
   max-width: 1200px;
@@ -500,3 +503,51 @@ footer p {
   border-color: #fff;
 }
 /* End Projects Section  */
+/* Contact Form Styling */
+.contact-form {
+  background-color: #2b2b44;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+.form-group label {
+  font-size: 1.2rem;
+  color: #f5b225;
+}
+.form-group input,
+.form-group textarea {
+  width: 92%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  background-color: #1e1e2d;
+  color: #fff;
+  font-size: 1rem;
+}
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #f5b225;
+}
+.submit-btn {
+  background-color: #f5b225;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  color: #24243e;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.submit-btn:hover {
+  background-color: #ffc107;
+}
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
