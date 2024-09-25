@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume - Ahmad Khalifa</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <style>
+      .section {
+        margin-bottom: 40px;
+        padding-left: 40px;
+      }
+
+      .item {
+        margin-bottom: 20px;
+        position: relative;
+        padding-left: 30px;
+      }
+
+      .item:before {
+        content: "\2022"; /* Unicode for a bullet point */
+        position: absolute;
+        left: -25px;
+        top: 0px;
+        color: #ffc107; /* Yellow Color */
+        font-size: 50px;
+      }
+
+      h3 {
+        color: #ffffff;
+      }
+
+      .date {
+        color: #ffc107; /* Yellow Color */
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 5px;
+        display: block;
+      }
+      .separator {
+        border-bottom: 1px solid #333;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <aside class="sidebar">
+        <img src="./assets/image.jpg" alt="Ahmad Khalifa" />
+        <h2>Ahmad Khalifa</h2>
+        <h3>Full Stack Developer</h3>
+
+        <!-- Contact Information -->
+        <div class="contact-info">
+          <p><i class="fas fa-envelope"></i> khalifa14112003@gmail.com</p>
+          <p><i class="fas fa-phone"></i> +20 1015388310</p>
+          <p><i class="fas fa-birthday-cake"></i> 14 November, 2003</p>
+          <p><i class="fas fa-map-marker-alt"></i> Alexandria, Egypt</p>
+        </div>
+
+        <!-- Social Media Icons -->
+        <div class="social-buttons">
+          <a href="https://www.facebook.com/khalifa112003" class="btn">
+            <div class="sign">
+              <i class="fab fa-facebook facebook"></i>
+            </div>
+            <div class="text">khalifa112003</div>
+          </a>
+
+          <a href="https://www.linkedin.com/in/khalifa2003/" class="btn">
+            <div class="sign">
+              <i class="fab fa-github github"></i>
+            </div>
+            <div class="text">@khalifa2003</div>
+          </a>
+
+          <a href="https://www.youtube.com/@ProgrammingArea" class="btn">
+            <div class="sign">
+              <i class="fab fa-youtube youtube"></i>
+            </div>
+            <div class="text">@ProgrammingArea</div>
+          </a>
+
+          <a href="https://github.com/khalifa2003" class="btn">
+            <div class="sign">
+              <i class="fab fa-linkedin linkedin"></i>
+            </div>
+            <div class="text">khalifa2003</div>
+          </a>
+        </div>
+      </aside>
+
+      <div class="main-content">
+        <header>
+          <nav class="navbar">
+            <h1 class="logo">Resume</h1>
+            <ul class="nav-menu">
+              <li><a href="about.html">About</a></li>
+              <li><a href="resume.html" class="active">Resume</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+              <i class="fas fa-bars"></i>
+            </div>
+          </nav>
+        </header>
+
+        <main>
+          <h2>Education</h2>
+          <div class="section">
+            <div class="item">
+              <h3>
+                Faculty of Computer and Data Science - Alexandria University
+              </h3>
+              <span class="date">2024 — 2026</span>
+            </div>
+          </div>
+
+          <div class="separator"></div>
+
+          <h2>Skills</h2>
+          <div class="skills-container">
+            <h3>Front-End Technologies</h3>
+            <div class="skill-category">
+              <div class="skill-card angular">
+                <i class="fab fa-angular"></i>
+                <p>Angular</p>
+              </div>
+              <div class="skill-card rxjs">
+                <i class="fab fa-js-square"></i>
+                <p>RxJS</p>
+              </div>
+              <div class="skill-card primeng">
+                <i class="fab fa-js-square"></i>
+                <p>PrimeNG</p>
+              </div>
+              <div class="skill-card html5">
+                <i class="fab fa-html5"></i>
+                <p>HTML5</p>
+              </div>
+              <div class="skill-card css">
+                <i class="fab fa-css3-alt"></i>
+                <p>CSS</p>
+              </div>
+              <div class="skill-card bootstrap">
+                <i class="fab fa-bootstrap"></i>
+                <p>Bootstrap</p>
+              </div>
+              <div class="skill-card javascript">
+                <i class="fab fa-js-square"></i>
+                <p>JavaScript</p>
+              </div>
+              <div class="skill-card typescript">
+                <i class="fab fa-js-square"></i>
+                <p>TypeScript</p>
+              </div>
+            </div>
+
+            <h3>Back-End Technologies</h3>
+            <div class="skill-category">
+              <div class="skill-card node-js">
+                <i class="fab fa-node-js"></i>
+                <p>Node.js</p>
+              </div>
+              <div class="skill-card nest-js">
+                <i class="fab fa-js-square"></i>
+                <p>Nest.js</p>
+              </div>
+              <div class="skill-card json">
+                <i class="fas fa-database"></i>
+                <p>JSON</p>
+              </div>
+            </div>
+
+            <h3>Databases</h3>
+            <div class="skill-category">
+              <div class="skill-card mongodb">
+                <i class="fas fa-database"></i>
+                <p>MongoDB</p>
+              </div>
+              <div class="skill-card mysql">
+                <i class="fas fa-database"></i>
+                <p>MySQL</p>
+              </div>
+            </div>
+
+            <h3>Programming Languages</h3>
+            <div class="skill-category">
+              <div class="skill-card java">
+                <i class="fab fa-java"></i>
+                <p>Java</p>
+              </div>
+              <div class="skill-card python">
+                <i class="fab fa-python"></i>
+                <p>Python</p>
+              </div>
+              <div class="skill-card javascript">
+                <i class="fab fa-js-square"></i>
+                <p>JavaScript</p>
+              </div>
+              <div class="skill-card typescript">
+                <i class="fab fa-js-square"></i>
+                <p>TypeScript</p>
+              </div>
+            </div>
+
+            <h3>Version Control</h3>
+            <div class="skill-category">
+              <div class="skill-card git">
+                <i class="fab fa-git"></i>
+                <p>Git</p>
+              </div>
+              <div class="skill-card github">
+                <i class="fab fa-github"></i>
+                <p>GitHub</p>
+              </div>
+            </div>
+          </div>
+        </main>
+
+        <footer>
+          <p>© 2024 Ahmad Khalifa. All rights reserved.</p>
+        </footer>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
