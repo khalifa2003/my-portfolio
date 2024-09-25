@@ -10,7 +10,7 @@
   <body>
     <div class="container">
       <aside class="sidebar">
-       <img src="./assets/image.jpg" alt="Ahmad Khalifa" />
+        <img src="./assets/image.jpg" alt="Ahmad Khalifa" />
         <h2>Ahmad Khalifa</h2>
         <h3>Full Stack Developer</h3>
 
@@ -72,16 +72,53 @@
         </header>
 
         <main>
-          <section class="portfolio">
-            <p>Check out my latest projects below:</p>
-            <ul>
-              <li>Finance App - Web Development</li>
-              <li>Orion - Web Development</li>
-              <li>Fundo - Web Design</li>
-              <li>Metaspark - Web Design</li>
-              <li>Brawlalia - Applications</li>
+          <div class="portfolio-header">
+            <ul class="filter-menu">
+              <li data-filter="all" class="active">All</li>
+              <li data-filter="pure">Pure HTML, CSS, JS</li>
+              <li data-filter="full-stack">Full-Stack</li>
+              <li data-filter="back-end">Back-End</li>
+              <li data-filter="front-end">Front-End</li>
             </ul>
-          </section>
+          </div>
+
+          <div class="card-container">
+            <div class="card pure">
+              <img src="./assets/projects/bondi.jpeg" alt="bondi" />
+              <h3>Bondi</h3>
+              <p>Web Design</p>
+            </div>
+
+            <div class="card pure">
+              <img src="./assets/projects/dashboard.jpeg" alt="Dashboard" />
+              <h3>Dashboard</h3>
+              <p>Web Design</p>
+            </div>
+
+            <div class="card pure">
+              <img src="./assets/projects/kasper.png" alt="kasper" />
+              <h3>Kasper</h3>
+              <p>Web Design</p>
+            </div>
+
+            <div class="card pure">
+              <img src="./assets/projects/leon.png" alt="leon" />
+              <h3>Leon</h3>
+              <p>Web Design</p>
+            </div>
+
+            <div class="card front-end">
+              <img src="./assets/projects/movies.jpeg" alt="movies" />
+              <h3>Movies</h3>
+              <p>Front-End Design</p>
+            </div>
+
+            <div class="card pure">
+              <img src="./assets/projects/template-3.jpeg" alt="template-3" />
+              <h3>Template 3</h3>
+              <p>Web Design</p>
+            </div>
+          </div>
         </main>
 
         <footer>

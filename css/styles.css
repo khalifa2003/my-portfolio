@@ -459,3 +459,28 @@ footer p {
   transform: translate(2px, 2px);
 }
 /* End Buttons  */
+/* Start Projects Section  */
+.filter-menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.filter-menu li {
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #2b2b44;
+  color: #f5b225;
+  border-radius: 5px;
+}
+.filter-menu li.active,
+.filter-menu li:hover {
+  background-color: #f5b225;
+  color: #24243e;
+}
+.card-container img {
+  width: 100%;
+}
+
+/* End Projects Section  */
