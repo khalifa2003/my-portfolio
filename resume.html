@@ -12,12 +12,25 @@
         padding-left: 40px;
       }
 
+      .pdf {
+        color: #fff;
+        background-color: rgb(0, 0, 136);
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      .pdf:hover {
+        background-color: blue;
+        font-weight: bold;
+        transition: 0.3s;
+        box-shadow: 0 0 10px #fff;
+      }
       .item {
         margin-bottom: 20px;
         position: relative;
         padding-left: 30px;
       }
-
       .item:before {
         content: "\2022"; /* Unicode for a bullet point */
         position: absolute;
@@ -26,11 +39,9 @@
         color: #ffc107; /* Yellow Color */
         font-size: 50px;
       }
-
       h3 {
         color: #ffffff;
       }
-
       .date {
         color: #ffc107; /* Yellow Color */
         font-size: 16px;
@@ -72,8 +83,16 @@
               <h3>
                 Faculty of Computer and Data Science - Alexandria University
               </h3>
-              <h3>GPA: 3.3</h3>
-              <span class="date">2024 — 2026</span>
+              <h3>
+                GPA: 3.3
+                <span class="date">2024 — 2026</span>
+              </h3>
+              <a
+                href="./assets/CV-Ahmad_Khalifa.pdf"
+                target="_blank"
+                class="pdf"
+                >Open CV
+              </a>
             </div>
           </div>
 
@@ -208,6 +227,7 @@
         </footer>
       </div>
     </div>
+
     <script src="./js/script.js"></script>
   </body>
 </html>

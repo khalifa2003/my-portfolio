@@ -24,6 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
 function createSidebar() {
   return `
       <aside class="sidebar">
@@ -73,3 +74,4 @@ function createSidebar() {
   `;
 }
 document.getElementById("sidebar").innerHTML = createSidebar();
+
