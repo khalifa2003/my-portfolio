@@ -482,5 +482,21 @@ footer p {
 .card-container img {
   width: 100%;
 }
-
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+}
+.btn-container a {
+  text-decoration: none;
+  color: #bbb;
+  font-weight: bold;
+  padding: 5px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+.btn-container a:hover {
+  color: #fff;
+  transition: 0.3s;
+  border-color: #fff;
+}
 /* End Projects Section  */
