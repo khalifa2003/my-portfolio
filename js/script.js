@@ -166,3 +166,38 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+// add dark mode and light mode
+const toggleButton = document.getElementById('theme-toggle');
+const bodyElement = document.body;
+const iconElement = toggleButton.querySelector('i, svg'); // Select the icon
+
+// Check for saved theme in localStorage
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme) {
+  bodyElement.setAttribute('data-theme', savedTheme);
+} else {
+  bodyElement.setAttribute('data-theme', 'dark'); // Default to dark mode
+}
+
+// Update button text and icon
+const updateButton = () => {
+  const currentTheme = bodyElement.getAttribute('data-theme');
+  if (currentTheme === 'dark') {
+    toggleButton.innerHTML = '<i class="fas fa-moon"></i> Dark Mode'; // Moon icon for dark mode
+  } else {
+    toggleButton.innerHTML = '<i class="fas fa-sun"></i> Light Mode'; // Sun icon for light mode
+  }
+};
+
+// Call the function initially
+updateButton();
+
+// Toggle theme on button click
+toggleButton.addEventListener('click', () => {
+  const currentTheme = bodyElement.getAttribute('data-theme');
+  const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+  bodyElement.setAttribute('data-theme', newTheme);
+  localStorage.setItem('theme', newTheme); // Save theme preference
+  updateButton(); // Update button text and icon
+});
