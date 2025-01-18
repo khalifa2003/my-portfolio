@@ -14,17 +14,47 @@
       <div class="main-content">
         <header>
           <nav class="navbar">
-            <h1 class="logo">Blog</h1>
-            <ul class="nav-menu">
-              <li><a href="index.html">About</a></li>
-              <li><a href="resume.html">Resume</a></li>
-              <li><a href="projects.html">Projects</a></li>
-              <li><a href="blog.html" class="active">Blog</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <div class="hamburger">
+            <!-- Logo -->
+            <a href="index.html" class="logo">Blog</a>
+
+            <!-- Hamburger Menu (Mobile) -->
+            <button
+              class="hamburger"
+              aria-label="Toggle navigation"
+              aria-expanded="false"
+            >
               <i class="fas fa-bars"></i>
-            </div>
+            </button>
+
+            <!-- Navigation Menu -->
+            <ul class="nav-menu" role="menubar">
+              <li role="none">
+                <a href="index.html" class="nav-link" role="menuitem">About</a>
+              </li>
+              <li role="none">
+                <a href="resume.html" class="nav-link" role="menuitem"
+                  >Resume</a
+                >
+              </li>
+              <li role="none">
+                <a href="projects.html" class="nav-link" role="menuitem"
+                  >Projects</a
+                >
+              </li>
+              <li role="none">
+                <a href="blog.html" class="nav-link active" role="menuitem"
+                  >Blog</a
+                >
+              </li>
+              <li role="none">
+                <a href="contact.html" class="nav-link" role="menuitem"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+
+            <!-- Overlay for Mobile Menu -->
+            <div class="overlay"></div>
           </nav>
         </header>
 

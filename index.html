@@ -14,22 +14,49 @@
       <div class="main-content">
         <header>
           <nav class="navbar">
-            <h1 class="logo">About me</h1>
-            <ul class="nav-menu">
-              <li><a href="index.html" class="active">About</a></li>
-              <li><a href="resume.html">Resume</a></li>
-              <li><a href="projects.html">Projects</a></li>
-              <li><a href="blog.html">Blog</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <div class="hamburger">
+            <!-- Logo -->
+            <a href="index.html" class="logo">About Me</a>
+
+            <!-- Hamburger Menu (Mobile) -->
+            <button
+              class="hamburger"
+              aria-label="Toggle navigation"
+              aria-expanded="false"
+            >
               <i class="fas fa-bars"></i>
-            </div>
+            </button>
+
+            <!-- Navigation Menu -->
+            <ul class="nav-menu" role="menubar">
+              <li role="none">
+                <a href="index.html" class="nav-link active" role="menuitem"
+                  >About</a
+                >
+              </li>
+              <li role="none">
+                <a href="resume.html" class="nav-link" role="menuitem"
+                  >Resume</a
+                >
+              </li>
+              <li role="none">
+                <a href="projects.html" class="nav-link" role="menuitem"
+                  >Projects</a
+                >
+              </li>
+              <li role="none">
+                <a href="blog.html" class="nav-link" role="menuitem">Blog</a>
+              </li>
+              <li role="none">
+                <a href="contact.html" class="nav-link" role="menuitem"
+                  >Contact</a
+                >
+              </li>
+            </ul>
           </nav>
         </header>
 
         <main>
-          <p>
+          <p class="slide-in-bottom">
             I'm a student in the Faculty of Computer and Data Science at
             Alexandria University, learning data science and building websites
             as a self-study. I can build websites with Angular, Nest.js,
@@ -37,9 +64,9 @@
           </p>
 
           <!-- What I'm Doing Section -->
-          <h2>What I'm Doing</h2>
+          <h2 class-="slide-in-bottom">What I'm Doing</h2>
           <div class="card-container">
-            <div class="card">
+            <div class="card slide-in-bottom">
               <i class="fas fa-laptop-code"></i>
               <h3>Front-End Development</h3>
               <p>
@@ -47,7 +74,7 @@
                 using Angular, HTML, CSS, and JavaScript.
               </p>
             </div>
-            <div class="card">
+            <div class="card slide-in-bottom">
               <i class="fas fa-server"></i>
               <h3>Back-End Development (Nest.js)</h3>
               <p>
@@ -55,7 +82,7 @@
                 secure, and efficient web applications.
               </p>
             </div>
-            <div class="card">
+            <div class="card slide-in-bottom">
               <i class="fas fa-database"></i>
               <h3>Back-End Development (Node.js)</h3>
               <p>
@@ -63,7 +90,7 @@
                 with a focus on performance.
               </p>
             </div>
-            <div class="card">
+            <div class="card slide-in-bottom">
               <i class="fas fa-project-diagram"></i>
               <h3>Full-Stack Development</h3>
               <p>
