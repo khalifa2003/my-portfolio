@@ -14,19 +14,45 @@
       <div class="main-content">
         <header>
           <nav class="navbar">
-            <h1 class="logo">Projects</h1>
-            <ul class="nav-menu">
-              <li><a href="index.html">About</a></li>
-              <li><a href="resume.html">Resume</a></li>
-              <li>
-                <a href="projects.html" class="active">Projects</a>
-              </li>
-              <li><a href="blog.html">Blog</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <div class="hamburger">
+            <!-- Logo -->
+            <a href="index.html" class="logo">Projects</a>
+
+            <!-- Hamburger Menu (Mobile) -->
+            <button
+              class="hamburger"
+              aria-label="Toggle navigation"
+              aria-expanded="false"
+            >
               <i class="fas fa-bars"></i>
-            </div>
+            </button>
+
+            <!-- Navigation Menu -->
+            <ul class="nav-menu" role="menubar">
+              <li role="none">
+                <a href="index.html" class="nav-link" role="menuitem">About</a>
+              </li>
+              <li role="none">
+                <a href="resume.html" class="nav-link" role="menuitem"
+                  >Resume</a
+                >
+              </li>
+              <li role="none">
+                <a href="projects.html" class="nav-link active" role="menuitem"
+                  >Projects</a
+                >
+              </li>
+              <li role="none">
+                <a href="blog.html" class="nav-link" role="menuitem">Blog</a>
+              </li>
+              <li role="none">
+                <a href="contact.html" class="nav-link" role="menuitem"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+
+            <!-- Overlay for Mobile Menu -->
+            <div class="overlay"></div>
           </nav>
         </header>
 
@@ -42,7 +68,7 @@
           </div>
 
           <div class="card-container">
-            <div class="card front-end full-stack">
+            <div class="slide-in-bottom card front-end full-stack">
               <a
                 target="_blank"
                 href="https://programming-area.vercel.app/home"
@@ -62,7 +88,7 @@
                 >
               </div>
             </div>
-            <div class="card front-end full-stack">
+            <div class="slide-in-bottom card front-end full-stack">
               <a
                 target="_blank"
                 href="https://angular-13-brown.vercel.app/home"
@@ -82,7 +108,7 @@
                 >
               </div>
             </div>
-            <div class="card back-end full-stack">
+            <div class="slide-in-bottom card back-end full-stack">
               <img src="./assets/projects/github.jpg" alt="Dashboard" />
               <h3>Shoes Back-End</h3>
               <p>Nest Design</p>
@@ -99,7 +125,7 @@
                 >
               </div>
             </div>
-            <div class="card back-end full-stack">
+            <div class="slide-in-bottom card back-end full-stack">
               <img src="./assets/projects/github.jpg" alt="Dashboard" />
               <h3>Computer Supplements Back-End</h3>
               <p>Nest Design</p>
@@ -112,7 +138,7 @@
                 >
               </div>
             </div>
-            <div class="card back-end full-stack">
+            <div class="slide-in-bottom card back-end full-stack">
               <img src="./assets/projects/github.jpg" alt="Dashboard" />
               <h3>Computer Supplements Back-End</h3>
               <p>Node Design</p>
@@ -125,7 +151,7 @@
                 >
               </div>
             </div>
-            <div class="card pure">
+            <div class="slide-in-bottom card pure">
               <img src="./assets/projects/dashboard.jpeg" alt="Dashboard" />
               <h3>Dashboard</h3>
               <p>Web Design</p>
@@ -138,7 +164,7 @@
                 >
               </div>
             </div>
-            <div class="card pure">
+            <div class="slide-in-bottom card pure">
               <img src="./assets/projects/bondi.jpeg" alt="bondi" />
               <h3>Bondi</h3>
               <p>Web Design</p>
@@ -151,7 +177,7 @@
                 >
               </div>
             </div>
-            <div class="card pure">
+            <div class="slide-in-bottom card pure">
               <img src="./assets/projects/kasper.png" alt="kasper" />
               <h3>Kasper</h3>
               <p>Web Design</p>
@@ -164,7 +190,7 @@
                 >
               </div>
             </div>
-            <div class="card pure">
+            <div class="slide-in-bottom card pure">
               <img src="./assets/projects/leon.png" alt="leon" />
               <h3>Leon</h3>
               <p>Web Design</p>
@@ -177,7 +203,7 @@
                 >
               </div>
             </div>
-            <div class="card front-end">
+            <div class="slide-in-bottom card front-end">
               <img src="./assets/projects/movies.jpeg" alt="movies" />
               <h3>Movies</h3>
               <p>Front-End Design</p>
@@ -194,7 +220,7 @@
                 >
               </div>
             </div>
-            <div class="card pure">
+            <div class="slide-in-bottom card pure">
               <img src="./assets/projects/template-3.jpeg" alt="template-3" />
               <h3>Template 3</h3>
               <p>Web Design</p>
@@ -211,7 +237,7 @@
                 >
               </div>
             </div>
-            <div class="card pure">
+            <div class="slide-in-bottom card pure">
               <img src="./assets/projects/shoes.jpeg" alt="shoes" />
               <h3>Shoes Landing</h3>
               <p>Web Design</p>
@@ -228,7 +254,7 @@
                 >
               </div>
             </div>
-            <div class="card pure">
+            <div class="slide-in-bottom card pure">
               <img src="./assets/projects/sun.jpeg" alt="sun" />
               <h3>Sun</h3>
               <p>Web Design</p>
@@ -245,7 +271,7 @@
                 >
               </div>
             </div>
-            <div class="card pure">
+            <div class="slide-in-bottom card pure">
               <img src="./assets/projects/twitter.jpeg" alt="twitter" />
               <h3>Twitter Clone</h3>
               <p>Web Design</p>
@@ -262,7 +288,7 @@
                 >
               </div>
             </div>
-            <div class="card pure">
+            <div class="slide-in-bottom card pure">
               <img src="./assets/projects/youtube.jpeg" alt="youtube" />
               <h3>Youtube Clone</h3>
               <p>Web Design</p>
@@ -283,7 +309,7 @@
         </main>
 
         <footer>
-          <p>© 2024 Ahmad Khalifa. All rights reserved.</p>
+          <p>© 2024 Ahmad Khalifa. All bottoms reserved.</p>
         </footer>
       </div>
     </div>
